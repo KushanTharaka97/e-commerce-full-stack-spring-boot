@@ -17,14 +17,14 @@ public class CategoryService {
         this.categoryRepository = categoryRepository;
     }
 
-    public List<Category> getAllTheProducts(){
-        log.info("started the get all products service");
+    public List<Category> getAllTheCategories(){
+//        log.info("started the get all categories service");
         return categoryRepository.findAll();
     }
 
 
     public Category getCategoryById(Long categoryIdToSearch){
-        log.info("started the get all products service");
+//        log.info("started the get all categories service");
         return categoryRepository.findById(categoryIdToSearch).get();
     }
 

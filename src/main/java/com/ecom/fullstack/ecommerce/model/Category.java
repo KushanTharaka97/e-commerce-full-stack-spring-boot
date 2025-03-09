@@ -1,14 +1,17 @@
 package com.ecom.fullstack.ecommerce.model;
 
 import jakarta.persistence.*;
-import lombok.Builder;
-import lombok.Data;
+import lombok.*;
 
 import java.util.Set;
 
 @Builder
 @Data
 @Entity
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Category {
 
     @Id
